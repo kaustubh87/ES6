@@ -14,10 +14,17 @@
                        var str = _this.firstname + " likes to " +action;
                        console.log(str);
                    });
+               },
+               displayActions : function(){
+                   this.actions.forEach(function(action){
+                       var str = this.firstname + " likes to " + action;
+                       console.log(str);
+                   }.bind(this));
                }
+               
            };
 
-           person.printActions();
+           person.displayActions();
     </script>
             <title>Arrow Functions and this</title>
 </head>
