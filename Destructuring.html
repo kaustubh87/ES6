@@ -8,6 +8,23 @@
           var [first,,, fourth,] = ["Dallas","Boston","Seattle","Los Angeles","Portland"];
           console.log(first);
           console.log(fourth);
+
+          var sandwich = {
+              title: "Reuben",
+              price: 7,
+              description: "Favorite Sandwich",
+              ingredients: ['bread', 'corned chicken', 'cheese']
+          };
+
+          var {title, price} = {
+             title: "Reuben",
+              price: 7,
+              description: "Favorite Sandwich",
+              ingredients: ['bread', 'corned chicken', 'cheese']
+          }
+
+          console.log(sandwich.title);
+          console.log(sandwich.price);
     </script>
             <title>Destructuring</title>
 </head>
