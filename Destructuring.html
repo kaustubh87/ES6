@@ -5,26 +5,18 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
     <script type="text/babel">
-          var [first,,, fourth,] = ["Dallas","Boston","Seattle","Los Angeles","Portland"];
-          console.log(first);
-          console.log(fourth);
+         var vacation = {
+             destination: "Chile",
+             travelers: 2,
+             activity: "skiing",
+             cost: 4000
+         };
 
-          var sandwich = {
-              title: "Reuben",
-              price: 7,
-              description: "Favorite Sandwich",
-              ingredients: ['bread', 'corned chicken', 'cheese']
-          };
+         function vacationMarketing({destination, activity}){
+                return `Come to ${destination} and do some ${activity}`
+         }
 
-          var {title, price} = {
-             title: "Reuben",
-              price: 7,
-              description: "Favorite Sandwich",
-              ingredients: ['bread', 'corned chicken', 'cheese']
-          }
-
-          console.log(sandwich.title);
-          console.log(sandwich.price);
+         console.log(vacationMarketing(vacation));
     </script>
             <title>Destructuring</title>
 </head>
